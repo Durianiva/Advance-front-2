@@ -1,0 +1,339 @@
+.auth-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 14px 20px;
+  background-color: #fff;
+  border-bottom: none;
+  box-shadow: 0 10px 20px -14px rgba(0, 0, 0, 0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth-logo {
+  margin-left: 2.5rem;
+}
+
+.auth-logo img {
+  width: 85%;
+}
+
+@media screen and (max-width: 768px) {
+  .auth-header {
+    padding: 8px 8px;
+    box-shadow: 0 10px 20px -14px rgba(0, 0, 0, 0.15);
+  }
+
+  .auth-logo {
+    margin-left: 1rem;
+  }
+
+  .auth-logo img {
+    width: 80%;
+  }
+}
+
+.auth-container {
+  font-family: "Manrope", sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  width: 90%;
+}
+
+@media (min-width: 1024px) and (max-width: 1460px) {
+  .column {
+    width: 50%;
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 1461px) {
+  .column {
+    width: 40%;
+    max-width: 50%;
+  }
+}
+
+.auth-card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #ecebeb;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.auth-card-header {
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.auth-card-header h2 {
+  margin: 0 0 6px 0;
+  font-size: 20pt;
+}
+
+.tagline {
+  color: #7a7a7a;
+  font-size: 10pt;
+}
+
+.auth-card-body {
+  margin: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.input-field {
+  color: #4a4a4a;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.form-label {
+  margin-bottom: 6px;
+  font-size: 10.5pt;
+  font-weight: 600;
+}
+
+.form-label b {
+  color: #ec7777;
+  font-weight: 600;
+}
+
+.auth-form-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: "Manrope", sans-serif;
+  font-size: 10.5pt;
+  color: #333;
+}
+
+.auth-form-input::placeholder {
+  color: #a8a8a8;
+}
+
+.auth-form-input:focus {
+  outline: none;
+  border-color: #60cc8d;
+  box-shadow: 0 0 0 2px rgba(96, 204, 141, 0.2);
+}
+
+/* Select wrapper (used for gender + country code) */
+.wrapping-select {
+  position: relative;
+}
+
+.wrapping-select::after {
+  content: "\EA4E";
+  font-family: "remixicon";
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #666;
+}
+
+#gender {
+  width: 100%;
+}
+
+.wrapping-number {
+  display: flex;
+  align-items: stretch;
+}
+
+.country-flag {
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #eeeeee;
+}
+
+.wrapping-number-child {
+  flex-shrink: 0;
+}
+
+#country_number {
+  border-radius: 0;
+  border-right: none;
+  width: 90px;
+  height: 100%;
+}
+
+#no_hp {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  cursor: pointer;
+  padding-right: 36px;
+}
+
+/* Password field with clickable show/hide eye icon */
+.wrapping-password-child {
+  position: relative;
+  width: 100%;
+}
+
+.wrapping-password-child .auth-form-input {
+  padding-right: 44px;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  color: #9a9a9a;
+  font-size: 13pt;
+  cursor: pointer;
+  user-select: none;
+}
+
+.password-toggle-icon:hover {
+  color: #666;
+}
+
+.forgot-password {
+  text-align: right;
+  color: #7a7a7a;
+  font-weight: 600;
+  font-size: 9.5pt;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+/* Primary (solid green) and secondary (light green) action buttons,
+   shared between the register and login pages */
+.btn-primary,
+.btn-secondary {
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+  transition: background-color 0.15s ease;
+}
+
+.btn-primary {
+  margin-bottom: 0.75rem;
+  background-color: #1bd148;
+}
+
+.btn-primary:hover {
+  background-color: #1abb42;
+}
+
+.btn-primary:active {
+  background-color: #16a73a;
+}
+
+.btn-secondary {
+  background-color: #c5ffbd9f;
+}
+
+.btn-secondary:hover {
+  background-color: #c5ffbde3;
+}
+
+.btn-secondary:active {
+  background-color: #c5ffbd;
+}
+
+.btn-primary button,
+.btn-primary a,
+.btn-secondary button,
+.btn-secondary a {
+  display: block;
+  width: 100%;
+  padding: 13px 12px;
+  font-size: 11.5pt;
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border: none;
+  background: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary button,
+.btn-primary a {
+  color: #fff;
+}
+
+.btn-secondary button,
+.btn-secondary a {
+  color: #16a73ab7;
+}
+
+.divider-sso {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border-line {
+  flex: 1;
+  border-top: 1px solid #ecebeb;
+  margin: 0 10px;
+}
+
+.divider-text {
+  padding: 0 10px;
+  color: #7a7a7a;
+  font-size: 9.5pt;
+}
+
+.button-google {
+  width: 100%;
+  padding: 12px 12px;
+  font-size: 11.5pt;
+  font-family: "Manrope", sans-serif;
+  background-color: #fff;
+  border: 1px solid #ecebeb;
+  color: #333;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-google:hover {
+  background-color: #fafafa;
+}
+
+.ri-google-fill {
+  font-size: 20pt;
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  vertical-align: middle;
+}
+
+/* Hide the browser's built-in reveal control; keep the single app button. */
+.auth-form-input::-ms-reveal,
+.auth-form-input::-ms-clear { display: none; }
+button.password-toggle-icon { border: 0; background: transparent; padding: 4px; line-height: 1; }
+button.password-toggle-icon:focus-visible { outline: 2px solid var(--green-dark); outline-offset: 2px; border-radius: 4px; }

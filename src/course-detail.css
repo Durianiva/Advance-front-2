@@ -1,0 +1,418 @@
+/* # breadcrumb */
+.breadcrumb {
+  font-size: 13px;
+  color: #6b6b6b;
+  margin-bottom: 16px;
+}
+
+.breadcrumb a {
+  color: #6b6b6b;
+  text-decoration: none;
+}
+
+.breadcrumb span:last-child {
+  color: #333333;
+}
+
+/* # hero-kelas */
+.detail-hero {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  color: #fff;
+  margin-bottom: 28px;
+}
+
+.detail-hero-bg {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.detail-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.45));
+}
+
+.detail-hero-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 70px;
+}
+
+.detail-hero-content h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  max-width: 700px;
+  line-height: 1.3;
+}
+
+.detail-hero-content p {
+  font-size: 16px;
+  margin: 0 0 14px 0;
+}
+
+.detail-hero-rating {
+  font-size: 15px;
+}
+
+.detail-hero-rating i {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+/* # layout-konten-sidebar */
+.detail-layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.detail-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.detail-sidebar {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.detail-section {
+  margin-bottom: 16px;
+}
+
+/* # hilangkan-jarak-section-terakhir-di-kolom-utama */
+.detail-main .detail-section:last-child {
+  margin-bottom: 0;
+}
+
+.detail-section h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.detail-section h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.detail-section .detail-section-subtitle {
+  color: #333333;
+  font-size: 15px;
+  margin: 0 0 24px 0;
+}
+
+.detail-section p {
+  font-size: 15px;
+  color: #444444;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* # card-pembungkus-section */
+.detail-card {
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+/* # sidebar-beli */
+.sidebar-card {
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 12px;
+  padding: 24px;
+  position: sticky;
+  top: 90px;
+}
+
+.sidebar-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.sidebar-price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  flex-wrap: nowrap;
+}
+
+.sidebar-price-now {
+  color: #3ecf4c;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.sidebar-price-old {
+  color: #a5a5a5;
+  font-size: 13px;
+  text-decoration: line-through;
+}
+
+.sidebar-discount-badge {
+  margin-left: auto;
+  background-color: #ffbd3a;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.sidebar-offer {
+  color: #2f80ed;
+  font-size: 13px;
+  margin: 8px 0 16px 0;
+}
+
+.button-buy {
+  width: 100%;
+  background-color: #3ecf4c;
+  color: #fff;
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.button-buy:hover {
+  background-color: #35c243;
+}
+
+.sidebar-includes-title,
+.sidebar-language-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.sidebar-includes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  font-size: 15px;
+  color: #444444;
+  border-top: 1px solid #eee;
+  padding-top: 18px;
+  margin-bottom: 22px;
+}
+
+.sidebar-language {
+  font-size: 15px;
+  color: #444444;
+}
+
+/* # tutor */
+.tutor-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.tutor-card {
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.tutor-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tutor-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+}
+
+.tutor-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tutor-role {
+  font-size: 12px;
+  color: #6b6b6b;
+}
+
+.tutor-bio {
+  font-size: 13px;
+  color: #444444;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* # kurikulum */
+.curriculum-accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.curriculum-item {
+  border-bottom: 1px solid #eee;
+  padding: 14px 0;
+}
+
+.curriculum-item:last-child {
+  border-bottom: none;
+}
+
+.curriculum-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #3ecf4c;
+  cursor: pointer;
+}
+
+.curriculum-item-header i {
+  color: #333333;
+  font-size: 20px;
+}
+
+.curriculum-item-body {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.curriculum-lesson {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #333333;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 12px 16px;
+}
+
+.curriculum-lesson-meta {
+  display: flex;
+  gap: 16px;
+  color: #6b6b6b;
+  font-size: 12px;
+}
+
+.curriculum-lesson-meta i {
+  vertical-align: middle;
+}
+
+/* # rating-review */
+.review-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.review-card {
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.review-rating {
+  font-size: 13px;
+  color: #333333;
+  margin-top: 8px;
+}
+
+.review-rating i {
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+.review-text {
+  font-size: 13px;
+  color: #444444;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* # responsif-mobile */
+@media screen and (max-width: 768px) {
+  .detail-hero-bg {
+    height: 200px;
+  }
+
+  .detail-hero-content {
+    padding: 16px 18px;
+  }
+
+  .detail-hero-content h1 {
+    font-size: 19px;
+  }
+
+  .detail-hero-content p {
+    font-size: 13px;
+  }
+
+  .detail-section h2 {
+    font-size: 21px;
+  }
+
+  .detail-card,
+  .sidebar-card {
+    padding: 16px;
+  }
+
+  .detail-layout {
+    flex-direction: column;
+  }
+
+  .detail-sidebar {
+    order: -1;
+    width: 100%;
+  }
+
+  .sidebar-card {
+    position: static;
+  }
+
+  .tutor-list,
+  .review-list {
+    grid-template-columns: 1fr;
+  }
+
+  .curriculum-lesson {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .sidebar-includes {
+    grid-template-columns: 1fr;
+  }
+}
